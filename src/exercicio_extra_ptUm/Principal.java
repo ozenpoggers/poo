@@ -1,10 +1,15 @@
 package exercicio_extra_ptUm;
 
+import javax.swing.JOptionPane;
+
 public class Principal {
 	
 	public static void main(String[] args) {
 		
-		Livro l1 = new Livro("Jojo", "12345", 50);
+		String nomeAutor
+			= JOptionPane.showInputDialog("Informe o nome do autor:");
+		
+		Livro l1 = new Livro(nomeAutor, "12345", 50);
 		l1.setTitulo("Java 2 para Web");
 		l1.setAno(2077);
 		System.out.println(l1.detalhes());
